@@ -24,7 +24,7 @@ module.exports = async function (context, req) {
 };
 
 async function analyzeImage(img) {
-  const subscriptionKey = process.env.SUBSCRIPTIONKEY;
+  const subscriptionKey = process.env.subscriptionKey;
   const uriBase = process.env.ENDPOINT + "/face/v1.0/detect";
 
   let params = new URLSearchParams({
@@ -37,7 +37,8 @@ async function analyzeImage(img) {
     method: "POST", //WHAT TYPE OF REQUEST?
     body: img, //WHAT ARE WE SENDING TO THE API?
     headers: {
-      "Content-Type": "application/octet-stream", //do this in the next section
+      "Content-Type": "application/octet-stream",
+      "Ocp-Apim-Subscription-Key": subscriptionKey, //do this in the next section
     },
   });
   let data = await resp.json();
