@@ -11,16 +11,16 @@ module.exports = async function (context, req) {
 
   // parse the body
   const parts = multipart.Parse(body, boundary);
-
+  //module.exports function
+  //analyze the image
+  const result = await analyzeImage(parts[0].data);
   let emotions = result[0].faceAttributes.emotion;
 
   let objects = Object.values(emotions);
   const main_emotion = Object.keys(emotions).find(
     (key) => emotions[key] === Math.max(...objects)
   );
-  //module.exports function
-  //analyze the image
-  const result = await analyzeImage(parts[0].data);
+
   context.res = {
     body: {
       main_emotion,
