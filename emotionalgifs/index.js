@@ -1,4 +1,5 @@
 const multipart = require("parse-multipart");
+const fetch = require("node-fetch");
 module.exports = async function (context, req) {
   context.log("JavaScript HTTP trigger function processed a request.");
 
