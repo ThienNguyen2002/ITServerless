@@ -28,9 +28,10 @@ module.exports = async function (context, req) {
 async function uploadFile(parsedBody, ext) {
   const blobServiceClient =
     BlobServiceClient.fromConnectionString(connectionString);
-  const containerName = "bunnimage-upload";
+  const containerName = "images";
   const containerClient = blobServiceClient.getContainerClient(containerName); // Get a reference to a container
   const blobName = "test." + ext; // Create the container
   const blockBlobClient = containerClient.getBlockBlobClient(blobName); // Get a block blob client
+  const uploadBlobResponse = await blockBlobClient.upload(parsedBody[0].data, parsedBody[0].data.length);
   return "File Saved";
 }
