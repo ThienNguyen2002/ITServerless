@@ -32,7 +32,7 @@ module.exports = async function (context, req) {
   } catch (err) {
     context.log(err);
     context.log("Undefined body image");
-    responseMessage = "Sorry! No image attached.";
+    result = "Sorry! No image attached.";
   }
 
   context.res = {
