@@ -25,7 +25,7 @@ module.exports = async function (context, req) {
       username = "invalidimage";
       ext = "";
     }
-    let fileName = req.headers["insert_header_name"];
+    let fileName = req.headers["codename"];
 
     result = await uploadFile(parsedBody, ext, fileName);
     // fill the parameters in!
