@@ -81,9 +81,10 @@ module.exports = async function (context, req) {
   let message = queryObject.Body; // user's input
   let document = { message: message }; // now in json form
   let items = await createDocument(document);
-
-  // formats text output for your user
-  const responseMessage = `Thanks 😊! Stored your secret "${message}".';`;
+  let random_value = Math.floor(items.length * Math.random());
+  const responseMessage = `Thanks 😊! Stored your secret "${message}". 😯 Someone confessed that: ${JSON.stringify(
+    items[random_value].message
+  )}`;
 
   context.res = {
     // status: 200, /* Defaults to 200 */
