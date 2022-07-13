@@ -22,6 +22,8 @@ module.exports = async function (context, req) {
 
   var catOne = await generateCatInBase64();
   var catTwo = await generateCatInBase64();
+  var catThree = await generateCatInBase64();
+  var catFour = await generateCatInBase64();
   var array = [
     "Shreya",
     "Emily",
@@ -43,6 +45,8 @@ module.exports = async function (context, req) {
     body: {
       cat1: catOne,
       cat2: catTwo,
+      cat3: catThree,
+      cat4: catFour,
       names: names,
     },
   };
