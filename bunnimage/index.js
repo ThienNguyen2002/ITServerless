@@ -8,5 +8,5 @@ bunnForm.addEventListener('submit', function (event) {
       return
    }
    const output = document.getElementById("output")
-   output.textContent = username + "❤"
+   output.textContent = 'Thanks!'
 });
