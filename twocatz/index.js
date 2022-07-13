@@ -24,21 +24,21 @@ module.exports = async function (context, req) {
   var catTwo = await generateCatInBase64();
   var catThree = await generateCatInBase64();
   var catFour = await generateCatInBase64();
-  var array = [
-    "Shreya",
-    "Emily",
-    "Fifi",
-    "Beau",
-    "Evelyn",
-    "Julia",
-    "Daniel",
-    "Fardeen",
-  ];
-  // Shuffle array
-  const shuffled = array.sort(() => 0.5 - Math.random());
+  // var array = [
+  //   "Shreya",
+  //   "Emily",
+  //   "Fifi",
+  //   "Beau",
+  //   "Evelyn",
+  //   "Julia",
+  //   "Daniel",
+  //   "Fardeen",
+  // ];
+  // // Shuffle array
+  // const shuffled = array.sort(() => 0.5 - Math.random());
 
-  // Get sub-array of first n elements after shuffled
-  let names = shuffled.slice(0, 2);
+  // // Get sub-array of first n elements after shuffled
+  // let names = shuffled.slice(0, 2);
 
   context.res = {
     // status: 200, /* Defaults to 200 */
@@ -47,7 +47,6 @@ module.exports = async function (context, req) {
       cat2: catTwo,
       cat3: catThree,
       cat4: catFour,
-      names: names,
     },
   };
 };
