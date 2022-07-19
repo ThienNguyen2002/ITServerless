@@ -10,8 +10,8 @@
 ### APIs
 
 **Realty Mole Property**
-*Has to be apartments and must have an location.
-*Gets the rent estimate from how many rooms, bathrooms, etc.
+*Has to have an valid address
+*Returns the rent estimate 
 
 
 ### Packages/Libraries/Databases
@@ -22,6 +22,6 @@
 
 ### Front-end Languages
 
-**Javascript**
+**Javascript - React**
 
 ### Flowchart
