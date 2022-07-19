@@ -25,6 +25,5 @@
 **Javascript - React**
 
 ### Flowchart
-
-
+*This is the flowchart of the application
 ![RentWithRoomatesCalculatorFlowChart](https://user-images.githubusercontent.com/25162686/179640636-bd609b51-bfe1-4a27-83c2-13d564c41e60.png)
