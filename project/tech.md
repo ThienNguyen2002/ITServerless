@@ -25,4 +25,6 @@
 **Javascript - React**
 
 ### Flowchart
-![Rent+For+Roommates](https://user-images.githubusercontent.com/25162686/179640178-f670c1a5-2674-472d-ad3d-c3a9502b115e.png)
+
+
+![RentWithRoomatesCalculatorFlowChart](https://user-images.githubusercontent.com/25162686/179640636-bd609b51-bfe1-4a27-83c2-13d564c41e60.png)
