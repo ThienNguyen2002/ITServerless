@@ -2,28 +2,29 @@
 
 ### Azure Services
 
-**Name of Service**
-- [replace with bullet list of what purpose(s) it serves for my project]
-- [include how it will interact with other components of your project listed above/below]
+**Rent with roommates calculator**
+
+* Shows how much each person will pay each month from their total amount of income divided by the month's rent.
+* Function App
 
 ### APIs
 
-**Name of API**
-- [replace with bullet list of what purpose(s) it serves for my project]
-- [include how it will interact with other components of your project listed above/below]
+**Realty Mole Property**
+*Has to have an valid address
+*Returns the rent estimate 
+
 
 ### Packages/Libraries/Databases
 
-**Name of Packages/Library/Database**
-- [replace with bullet list of what purpose(s) it serves for my project]
-- [include how it will interact with other components of your project listed above/below]
+**node-fetch**
+*Fetches the request
+**Node.js**
 
 ### Front-end Languages
 
-**Name of Language**
-- [replace with bullet list of what purpose(s) it serves for my project]
-- [include how it will interact with other components of your project listed above/below]
+**Javascript - React**
 
 ### Flowchart
 
-[Replace with image of final flowchart]
+
+![RentWithRoomatesCalculatorFlowChart](https://user-images.githubusercontent.com/25162686/179640636-bd609b51-bfe1-4a27-83c2-13d564c41e60.png)
